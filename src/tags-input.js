@@ -455,6 +455,8 @@ export default function TagsInputDirective($timeout, $document, $window, $q, tag
 
               //undo the "temp" stuff to be ready for the next one ...
               scope.draggedElement.elem.style.position='static'
+              scope.draggedElement.elem.style.left = '0px';
+              scope.draggedElement.elem.style.top = '0px';
               scope.draggedElement = null
             }
           }
